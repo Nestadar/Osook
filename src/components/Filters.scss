@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  background-color: rgb(0, 246, 135);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+
+  button {
+    border: none;
+    background-color: none;
+    .iconsNav {
+      height: 50px;
+    }
+  }
+}
