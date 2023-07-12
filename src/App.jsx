@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.scss";
 import { useState, useEffect, useMemo } from "react";
 import "./App.scss";
@@ -8,12 +8,11 @@ import Publier from "./components/Pages/Publier";
 import Favoris from "./components/Pages/Favoris";
 import Messages from "./components/Pages/Messages";
 import Profil from "./components/Pages/Profil";
-import Filters from "./components/filters";
 
 function App() {
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  // const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:4343/api/objects")
@@ -27,8 +26,6 @@ function App() {
       setItems,
       filter,
       setFilter,
-      selectedCategory,
-      setSelectedCategory,
     }),
     [items, setItems, filter, setFilter]
   );

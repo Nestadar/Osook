@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import MyContext from "../Context";
 import Filters from "../filters";
-import Cards from "./Cards";
+import Card from "../Card";
 
 const Homepage = () => {
   const { items, filter } = useContext(MyContext);
@@ -14,7 +14,7 @@ const Homepage = () => {
     <div>
       <Filters />
       {filteredItems.map((card) => (
-        <Cards items={card} key={card.id} />
+        <Card items={card} key={card.id} />
       ))}
     </div>
   );
