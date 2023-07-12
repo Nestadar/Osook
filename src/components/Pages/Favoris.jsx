@@ -1,7 +1,11 @@
-import React from "react";
+import "./Favoris.scss";
 
 const Favoris = () => {
-  return <div>Favoris</div>;
+  return (
+    <div>
+      <p>Favoris</p>
+    </div>
+  );
 };
 
 export default Favoris;

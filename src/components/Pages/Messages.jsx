@@ -1,7 +1,11 @@
-import React from "react";
+import "./Messages.scss";
 
 const Messages = () => {
-  return <div>Messages</div>;
+  return (
+    <div>
+      <p>Messages</p>
+    </div>
+  );
 };
 
 export default Messages;
