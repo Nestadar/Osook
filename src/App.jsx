@@ -10,8 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <div>Yolo App</div>
-        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/publier" element={<Publier />} />
         <Route path="/favoris" element={<Favoris />} />
         <Route path="/messages" element={<Messages />} />
