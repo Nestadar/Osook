@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
+import "./index.scss";
 import Homepage from "./components/Pages/Homepage.jsx";
 import Publier from "./components/Pages/Publier";
 import Favoris from "./components/Pages/Favoris";

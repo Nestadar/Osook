@@ -1,7 +1,7 @@
 import "./Homepage.scss";
 
 const Homepage = () => {
-  return <></>;
+  return <>HOME</>;
 };
 
 export default Homepage;
