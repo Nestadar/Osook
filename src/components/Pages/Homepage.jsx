@@ -19,7 +19,7 @@ const Homepage = () => {
           <button type="button" onClick={handleHide} />
         </div>
       </div>
-      <div className="iciNavbar"></div>
+      <div className="contentHomepage"></div>
     </div>
   );
 };

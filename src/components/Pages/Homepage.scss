@@ -1,94 +1,93 @@
 
 
 .swipeDown {
-
-.backgroundHomepage {
+    opacity: 1;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    .backgroundHomepage {
     background-size: cover;
     transition: 1s ease;
+    position: absolute;
     }
     
 .logoOsook {
-    border: 2px solid red;
-    position: absolute;
     margin-left: 4em;
     margin-top: 2em;
-    }
-    
-.iciNavbar {
-    width: 100%;
-    height: 20em;
-    background-color: red;
+    position: absolute;
+    z-index: 4;
     }
 .divButtonSwipe {
     width: 100%;
     height: 50px;
-    position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    bottom: 0;
     box-sizing: border-box;
     margin-bottom: 2em;
+    z-index: 2;
+    bottom: 0;
     button {
         position: absolute;
+        z-index: 2;
         width: 50px;
         height: 50px;
         border-radius: 50px;
         opacity: .5;
         border: none;
+
         &:hover {
             border: none
         }
-        &:active {
-            background-color: red;
-        }
-}
+    }
 }
 
 }
+
+
 .swipeUp {
-    top:-100;
+    z-index: 3;
+    transition: .5s;
+    transition-timing-function: ease-out;
+    transform: translateY(-130%);
+    // display: none;
+    position: absolute;
     .backgroundHomepage {
-        position: absolute;
         background-size: cover;
         }
         
     .logoOsook {
-        position: absolute;
         margin-left: 4em;
         margin-top: 2em;
+        position: absolute;
+        z-index: 4;
         }
         
-    .iciNavbar {
-        width: 100%;
-        height: 20em;
-        background-color: red;
-        }
     .divButtonSwipe {
-        width: 100%;
-        height: 50px;
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: 0;
-        box-sizing: border-box;
-        margin-bottom: 2em;
+       display: none;
+       position: absolute;
         button {
             position: absolute;
             width: 50px;
             height: 50px;
             border-radius: 50px;
-            opacity: .5;
             &:hover {
                 border: none
-            }
-            &:active {
-                background-color: red;
             }
         }
     }
 }
+
+.contentHomepage {
+    bottom:0;
+    position: absolute;
+   background-color: red; 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+}
+
