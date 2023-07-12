@@ -1,12 +1,12 @@
-import MyContext from "./Context";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import coeurPlein from "../assets/images/card/Coeur-plein.png"
 import coeurVide from "../assets/images/card/Coeur-vide.png"
 import "./Card.scss" 
 import LogoUser from "../assets/images/card/user.png"
+const baseUrl = "http://localhost:4343/";
 
-const Card = () => {
-    const { items } = useContext(MyContext);
+const Card = ({items}) => {
+    const imageUrl = `${baseUrl}/${items.image}`;
     const [isFavorite, setIsFavorite] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
 
@@ -16,7 +16,7 @@ const Card = () => {
       };
 
     const handleClickDescription = (event) => {
-        if (event.target.id === "favoriteButton") {
+        if (event.target.id === "favoriteButton" || event.target.id === "buy" || event.target.id === "contact") {
             return;
           }
         setIsClicked(!isClicked)
@@ -25,7 +25,7 @@ const Card = () => {
     return (
     <div className="Cards" onClick={handleClickDescription}>
         <div className="imageContainer">
-            <div className="cardPicture" style={{ backgroundImage: `url("https://images-na.ssl-images-amazon.com/images/S/pv-target-images/045e2e4e0d357884b7bba9ed126c72d9db4ef02d64d3b59b0d528a52b76603d0._RI_V_TTW_SX720_FMjpg_.jpg")`}}>
+            <div className="cardPicture" style={{ backgroundImage: `url("${imageUrl}")` }}>
                 <img 
                 src={isFavorite === true ? coeurPlein : coeurVide}
                 className={isFavorite === true ? "isFavorite" : "notFavorite"}
@@ -38,21 +38,21 @@ const Card = () => {
         <div className={isClicked === false ? "displayClassic" : "cardInfo"}>
             <div className="divTitlePrice">
             <div className="cardTitle">
-                <h1>{items[14].title}</h1>
-                {/* <p>Ville : {items[14].city}</p> */}
+                <h1>{items?.title}</h1>
+                {/* <p>Ville : {items.city}</p> */}
             </div>
             <div className="cardPrice">
-                <p >{items[14].price} debens</p>
+                <p >{items?.price} debens</p>
             </div>
             </div>
             <div className={ isClicked === false ? "descriptionNone" : "cardDescription"}>
-                <p >{items[14].description}</p>
+                <p >{items?.description}</p>
             </div>
         </div>
         <div className={ isClicked === false ? "descriptionNone" : "cardBuy"}>
             <div className="inputUser">
             <img src={LogoUser} alt='logoUser'/>
-            <p>{items[14].seller}</p>
+            <p>{items?.seller}</p>
             </div>
             <div className="divButtons">
             <button id="buy">Acheter</button>
