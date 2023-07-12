@@ -7,6 +7,7 @@ import Publier from "./components/Pages/Publier";
 import Favoris from "./components/Pages/Favoris";
 import Messages from "./components/Pages/Messages";
 import Profil from "./components/Pages/Profil";
+// import Test from "./components/test";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -30,6 +31,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          {/* <Route path="/" element={<Test />} /> */}
           <Route path="/publier" element={<Publier />} />
           <Route path="/favoris" element={<Favoris />} />
           <Route path="/messages" element={<Messages />} />
