@@ -8,7 +8,6 @@ import Publier from "./components/Pages/Publier";
 import Favoris from "./components/Pages/Favoris";
 import Messages from "./components/Pages/Messages";
 import Profil from "./components/Pages/Profil";
-import Filters from "./components/filters";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -38,7 +37,7 @@ function App() {
       <MyContext.Provider value={valuesInContext}>
         <Router>
           <Routes>
-            <Route path="/" element={<Homepage items={items} />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/publier" element={<Publier />} />
             <Route path="/favoris" element={<Favoris />} />
             <Route path="/messages" element={<Messages />} />
