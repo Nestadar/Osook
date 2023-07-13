@@ -30,8 +30,9 @@ const Homepage = () => {
         </div>
       </div>
       <div className={hidden === false ? "contentNone" : "contentHomepage"}>
-        <div className="filters"></div>
-        {/* <Filters /> */}
+        <div className="filters">
+          <Filters />
+        </div>
         <div className="cartesDisplay">
           {filteredItems.map((card) => (
             <Card items={card} key={card.id} />
