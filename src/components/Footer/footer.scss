@@ -14,7 +14,7 @@
 
 .navigationFooter {
   position: relative;
-  width: 400px;
+  width: 100vw;
   height: 70px;
   background: #fff;
   display: flex;
@@ -75,7 +75,7 @@
         line-height: 75px;
         font-size: 1.5em;
         text-align: center;
-        transition: transform(0.5s);
+        transition: 0.5s;
         z-index: 10;
       }
 

@@ -3,8 +3,7 @@ import MyContext from "./Context";
 import "./Filters.scss";
 
 const Filters = () => {
-  const { filter, selectedCategory, setSelectedCategory, setFilter } =
-    useContext(MyContext);
+  const { setFilter } = useContext(MyContext);
 
   const handleFilter = (e) => {
     setFilter(e.target.value);

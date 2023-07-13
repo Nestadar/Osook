@@ -3,13 +3,14 @@
 
 .Cards2 {
     width: 150px;
-    height: autox;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1em;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
     border-radius: 16px;
     .imageContainer2 {
         width: auto;
@@ -37,12 +38,17 @@
         margin-left: 120px;
     }
     .cardInfo2 {
-        width:90%;
+        // width:90%;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
+
+        .divTitlePrice2 {
+            padding: 5px;
+        }
+        
         .cardTitle2 {
             display:flex;
             flex-direction: row;
@@ -62,6 +68,7 @@
         }
         .cardPrice2 p {
             font-family: 'Mohave', sans-serif;
+            font-size: 12px;
         }
     
         .cardDescription2 {
