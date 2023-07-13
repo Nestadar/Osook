@@ -1,22 +1,78 @@
+$font-family: "mohave";
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.nav-container {
-  background-color: rgb(255, 255, 255);
+.global-nav-container {
+  //   background-color: red;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 10vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  margin: 0;
 
-  button {
-    border: none;
-    background-color: none;
+  .nav-container {
+    // background-color: rgb(25, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    object-fit: contain;
 
-    .iconsNav {
-      height: 50px;
+    .search-mobile {
+      background-color: rgb(255, 238, 0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
+
+    button {
+      display: flex;
+      border: none;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //   padding: 2px;
+      text-align: center;
+      font-family: $font-family, sans-serif;
+      font-size: 10px;
+
+      &:hover {
+        border-bottom: black 1px solid;
+      }
+      .iconsNav {
+        display: flex;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+      }
+    }
+  }
+
+  .search-bar {
+    border: lightgrey solid 1px;
+    height: 5vh;
+    width: 30vw;
+    border-radius: 50px;
+    background-image: url(../src/assets/images/iconsNav/loupe1.png);
+    background-size: 65px;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 20px;
+  }
+  .search-bar::placeholder {
+    text-align: center;
   }
 }

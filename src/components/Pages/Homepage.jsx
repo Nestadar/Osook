@@ -11,7 +11,7 @@ const Homepage = () => {
     : items;
 
   return (
-    <div>
+    <div className="global-homepage">
       <Filters />
       {filteredItems.map((card) => (
         <Card items={card} key={card.id} />
