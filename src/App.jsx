@@ -35,7 +35,7 @@ function App() {
       <MyContext.Provider value={valuesInContext}>
         <Router>
           <Routes>
-            <Route path="/" element={<Homepage items={items} />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/publier" element={<Publier />} />
             <Route path="/favoris" element={<Favoris />} />
             <Route path="/messages" element={<Messages />} />
