@@ -8,19 +8,21 @@
     background-color: green;
     top: 0;
     position: fixed;
+    z-index:1;
 
 }
 
 .favTitle {
     box-sizing: border-box;
     width: 100vw;
-    border: 2px solid red;
     position: absolute;
     margin-top: 3em;
     p {
         text-align: center;
         text-decoration: underline; 
         font-family: 'Mohave', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 
@@ -36,12 +38,12 @@
 .favCards {
     box-sizing: border-box;
     width: 100%;
-    border: 2px solid red;
     padding-top: 6em;
     margin-top: 10em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
     margin-bottom: 10em;
 }
