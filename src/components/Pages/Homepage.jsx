@@ -31,7 +31,7 @@ const Homepage = () => {
       </div>
       <div className={hidden === false ? "contentNone" : "contentHomepage"}>
         <div className="filters"></div>
-        {/* <Filters /> */}
+        <Filters />
         <div className="cartesDisplay">
           {filteredItems.map((card) => (
             <Card items={card} key={card.id} />
