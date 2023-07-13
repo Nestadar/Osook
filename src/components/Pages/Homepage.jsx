@@ -7,7 +7,6 @@ import Footer from "../Footer/footer";
 import backgroundHomepage from "../../assets/images/Homepage/backgroundHomepage.png";
 import "./Homepage.scss";
 
-
 const Homepage = () => {
   const [hidden, setHidden] = useState(false);
 
@@ -38,7 +37,10 @@ const Homepage = () => {
             <Card items={card} key={card.id} />
           ))}
         </div>
-        <div className="Homefooter"><Footer /></div>
+
+        <div className="Homefooter">
+          <Footer />
+        </div>
       </div>
     </div>
   );
