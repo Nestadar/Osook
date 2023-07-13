@@ -3,7 +3,7 @@ import "./Profil.scss";
 
 const Profil = () => {
   return (
-    <div>
+    <div className="profilFooter">
       <p>Profil</p>
       <Footer />
     </div>

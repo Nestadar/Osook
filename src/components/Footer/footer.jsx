@@ -24,7 +24,7 @@ const Footer = () => {
             to="/publier"
           >
             <span className={window.location.pathname === "/publier" ? 'iconFooterClicked' : 'iconFooter'} onClick={handleClick}>
-              <img src={PublierFooter} alt="icone publier" />
+              <img id="imgFooter" src={PublierFooter} alt="icone publier" />
             </span>
             <span className={window.location.pathname === "/publier" ? 'textFooterClicked' : 'textFooter'} onClick={handleClick}>Publier</span>
           </NavLink>
@@ -37,7 +37,7 @@ const Footer = () => {
             to="/favoris"
           >
             <span className={window.location.pathname === "/favoris" ? 'iconFooterClicked' : 'iconFooter'} onClick={handleClick}>
-              <img src={FavorisFooter} alt="icone favoris" />
+              <img id="imgFooter" src={FavorisFooter} alt="icone favoris" />
             </span>
             <span className={window.location.pathname === "/favoris" ? 'textFooterClicked' : 'textFooter'} onClick={handleClick}>Favoris</span>
           </NavLink>
@@ -50,7 +50,7 @@ const Footer = () => {
             to="/"
           >
             <span className={window.location.pathname === "/" ? 'iconFooterClicked' : 'iconFooter'} onClick={handleClick}>
-              <img src={ExplorerFooter} alt="icone explorer" />
+              <img id="imgFooter" src={ExplorerFooter} alt="icone explorer" />
             </span>
             <span className={window.location.pathname === "/" ? 'textFooterClicked' : 'textFooter'} onClick={handleClick}>Explorer</span>
           </NavLink>
@@ -63,7 +63,7 @@ const Footer = () => {
             to="/messages"
           >
             <span className={window.location.pathname === "/messages" ? 'iconFooterClicked' : 'iconFooter'} onClick={handleClick}>
-              <img src={MessageFooter} alt="icone message" />
+              <img id="imgFooter" src={MessageFooter} alt="icone message" />
             </span>
             <span className={window.location.pathname === "/messages" ? 'textFooterClicked' : 'textFooter'} onClick={handleClick}>Messages</span>
           </NavLink>
@@ -76,7 +76,7 @@ const Footer = () => {
             to="/profil"
           >
             <span className={window.location.pathname === "/profil" ? 'iconFooterClicked' : 'iconFooter'} onClick={handleClick}>
-              <img src={ProfilFooter} alt="icone profil" />
+              <img id="imgFooter" src={ProfilFooter} alt="icone profil" />
             </span>
             <span className={window.location.pathname === "/profil" ? 'textFooterClicked' : 'textFooter'} onClick={handleClick}>Profil</span>
           </NavLink>

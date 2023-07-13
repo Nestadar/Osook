@@ -3,7 +3,7 @@ import "./Publier.scss";
 
 const Publier = () => {
   return (
-    <div>
+    <div className="publishFooter">
       <p>Publier</p>
       <Footer />
     </div>

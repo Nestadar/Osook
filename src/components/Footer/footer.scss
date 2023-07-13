@@ -5,12 +5,12 @@
   font-family: "Mohave";
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+// }
 
 .navigationFooter {
   position: relative;
@@ -23,7 +23,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
 
-  img {
+  #imgFooter {
     width: 37px;
   }
 
@@ -92,7 +92,7 @@ body {
   .indicatorFooter {
     position: relative;
     z-index: 1;
-    top: calc(50% - 35px);
+    top: calc(50% - 145px);
     left: 0;
     width: 70px;
     height: 70px;
