@@ -9,6 +9,7 @@ const Messages = () => {
   return (
     <>
       <div className="divMessages">
+        <h1 className="title-Message">Mes Messages</h1>
         {items.slice(0, 15).map((card) => (
           <div className="divTexto">
             <img src={`http://localhost:4343/${card.image}`} alt="rien" />
