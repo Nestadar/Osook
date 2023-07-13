@@ -1,14 +1,12 @@
 import { useState } from "react";
 import coeurPlein from "../assets/images/card/Coeur-plein.png";
-import Card from "./Card";
-import MyContext from "./Context";
 import "./Minicards.scss";
-const baseUrl = "http://localhost:4343/";
+// const baseUrl = "http://localhost:4343/";
 
-const Minicards = ({ items, price, title, image }) => {
+const Minicards = ({ items }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
-  const imageUrl = `${baseUrl}/${image}`;
+  // const imageUrl = `${baseUrl}/${items.image}`;
   const handleClickFavorite = () => {
     setIsFavorite(!isFavorite);
   };
@@ -29,7 +27,9 @@ const Minicards = ({ items, price, title, image }) => {
       <div className="imageContainer2">
         <div
           className="cardPicture2"
-          style={{ backgroundImage: `url("${imageUrl}")` }}
+          style={{
+            backgroundImage: `url("http://localhost:4343/${items.image}")`,
+          }}
         >
           <img
             src={coeurPlein}
@@ -43,12 +43,12 @@ const Minicards = ({ items, price, title, image }) => {
       <div className="cardInfo2">
         <div className="divTitlePrice2">
           <div className="cardTitle2">
-            <h1>{title}</h1>
+            <h1>{items.title}</h1>
 
             {/* <p>Ville : {items.city}</p> */}
           </div>
           <div className="cardPrice2">
-            <p>{price} debens</p>
+            <p>{items.price} debens</p>
           </div>
         </div>
       </div>
