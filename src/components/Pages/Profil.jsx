@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Footer from "../Footer/footer";
 import "./Profil.scss";
+import Filters from "../filters";
 
 const Profil = () => {
   const initialValues = { email: "", password: "", text: "" };
@@ -47,10 +47,84 @@ const Profil = () => {
   }, [formErrors, formValues, isSubmit]);
 
   return (
-    <div className="profilFooter">
-      <p>Profil</p>
-      <Footer />
-    </div>
+    <>
+      <Filters />
+      <div className="global-Profile-container">
+        <div className="profile-Container">
+          <div className="profile-setting-gear">
+            <img
+              className="profile-gear"
+              src="./src/assets/images/iconsNav/silhouette-de-roue-dentee 1.png"
+              alt="Profile"
+            />
+          </div>
+          <div className="profileTitlePic">
+            <h1 className="title-Profile">Mon Profil</h1>
+            <img
+              className="profile-pic"
+              src="./src/assets/images/iconsNav/pharaohPic.png"
+              alt="Profile"
+            />
+          </div>
+
+          <form className="profile-form" onSubmit={handleSubmit}>
+            <label className="profile-label" htmlFor="text">
+              Nom:
+              <input className="profile-input" type="text" name="text" />
+            </label>
+
+            <label className="profile-label" htmlFor="text">
+              Prénom:
+              <input className="profile-input" type="text" name="text" />
+            </label>
+
+            <label className="profile-label" htmlFor="email">
+              Email:
+              <input
+                className={`profile-input ${formErrors.email && "errorInput"}`}
+                type="email"
+                name="email"
+                value={formValues.email}
+                onChange={handleChange}
+              />
+            </label>
+            {formErrors.email && (
+              <p className="errorText">{formErrors.email}</p>
+            )}
+
+            <label className="profile-label" htmlFor="text">
+              Adresse:
+              <input className="profile-input" type="text" name="text" />
+            </label>
+
+            <label className="profile-label" htmlFor="number">
+              Téléphone:
+              <input className="profile-input" type="number" name="number" />
+            </label>
+
+            <label className="profile-label" htmlFor="password">
+              Mot de passe:<span className="asterisk">*</span>
+              <input
+                className={`profile-input ${
+                  formErrors.password && "errorInput"
+                }`}
+                type="password"
+                name="password"
+                required
+              />
+            </label>
+            {formErrors.password && (
+              <p className="errorText">{formErrors.password}</p>
+            )}
+            <div className="profileBtn">
+              <button className="Btn-OsooK" type="submit">
+                O'SooK!
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
   );
 };
 
