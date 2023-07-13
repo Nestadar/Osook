@@ -12,6 +12,9 @@ const Filters = () => {
 
   return (
     <div className="global-nav-container">
+      <div className="search">
+        <input className="search-bar" type="text" />
+      </div>
       <nav className="nav-container" id="item-select">
         <button value="" onClick={handleFilter}>
           <img
@@ -84,10 +87,6 @@ const Filters = () => {
           />
           Babioles
         </button>
-
-        <div className="search">
-          <input className="search-bar" type="text" />
-        </div>
       </nav>
     </div>
   );
