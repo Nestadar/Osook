@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
 
-
 // .favNavbar {
 //     width: 100vw;
 //     height: 20vh;
@@ -9,8 +8,17 @@
 //     top: 0;
 //     position: fixed;
 //     z-index:1;
-
 // }
+
+.favNavbar {
+    width: 100vw;
+    height: 20vh;
+    background-color: green;
+    top: 0;
+    position: fixed;
+    z-index:1;
+}
+
 .favContainer {
     background-color: rgba(237, 237, 237, 0.796);
 }
