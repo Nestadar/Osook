@@ -41,17 +41,21 @@ $font-family: "mohave";
       text-align: center;
       font-family: $font-family, sans-serif;
       font-size: 10px;
+      line-height: 30px;
 
       &:hover {
         border-bottom: black 1px solid;
+        padding-top: 10px;
       }
       .iconsNav {
         display: flex;
-        height: 2rem;
         justify-content: center;
         align-items: center;
         padding: 5px;
         filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+        width: 40px;
+        height: 40px;
+
       }
     }
   }
@@ -62,7 +66,7 @@ $font-family: "mohave";
     width: 80vw;
     border-radius: 50px;
     background-image: url(../src/assets/images/iconsNav/loupe1.png);
-    background-size: 65px;
+    background-size: 55px;
     background-repeat: no-repeat;
     align-items: flex-end;
     justify-content: flex-end;
