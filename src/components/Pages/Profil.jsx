@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Profil.scss";
-import Filters from "../filters";
+import Card from "../Card";
 
 const Profil = () => {
   const initialValues = { email: "", password: "", text: "" };
@@ -48,7 +48,6 @@ const Profil = () => {
 
   return (
     <>
-      <Filters />
       <div className="global-Profile-container">
         <div className="profile-Container">
           <div className="profile-setting-gear">
@@ -122,6 +121,9 @@ const Profil = () => {
               </button>
             </div>
           </form>
+        </div>
+        <div>
+          <Card />
         </div>
       </div>
     </>
