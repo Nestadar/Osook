@@ -4,7 +4,6 @@ import Minicards from "../../components/Minicards";
 import Footer from "../Footer/footer";
 import "./Favoris.scss";
 
-
 const Favoris = () => {
   const { items, filter } = useContext(MyContext);
 
@@ -20,10 +19,12 @@ const Favoris = () => {
       </div>
       <div className="favCards">
         {filteredItems.slice(0, 20).map((card) => (
-          <Minicards items={card} key={card.id} />
+          <Minicards items={card} key={card.id} image={card.image} />
         ))}
       </div>
-      <div className="favFooter"><Footer /></div>
+      <div className="favFooter">
+        <Footer />
+      </div>
     </div>
   );
 };

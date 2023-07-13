@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import MyContext from "../Context";
+import Minicards from "../Minicards";
+import Footer from "../Footer/footer";
 import "./Profil.scss";
-import Filters from "../filters";
 
-const Profil = () => {
+const Profil = ({ items }) => {
   const initialValues = { email: "", password: "", text: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -48,16 +50,16 @@ const Profil = () => {
 
   return (
     <>
-      <Filters />
       <div className="global-Profile-container">
         <div className="profile-Container">
-          <div className="profile-setting-gear">
+          <div className="home-settings">
             <img
               className="profile-gear"
               src="./src/assets/images/iconsNav/silhouette-de-roue-dentee 1.png"
-              alt="Profile"
+              alt="Paramètres"
             />
           </div>
+          <div className="Profile-Annonces"></div>
           <div className="profileTitlePic">
             <h1 className="title-Profile">Mon Profil</h1>
             <img
@@ -120,6 +122,21 @@ const Profil = () => {
               <button className="Btn-OsooK" type="submit">
                 O'SooK!
               </button>
+            </div>
+            <div className="annonces-profil" style={{ height: "400px" }}>
+              <h1 className="titleAnnonces">Mes Annonces </h1>
+              {items.slice(0, 4).map((item) => (
+                <Minicards
+                  key={item.id}
+                  title={item.title}
+                  price={item.price}
+                  image={item.image}
+                />
+              ))}
+            </div>
+
+            <div className="favFooter">
+              <Footer />
             </div>
           </form>
         </div>

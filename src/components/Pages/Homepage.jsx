@@ -39,6 +39,7 @@ const Homepage = () => {
             <Card items={card} key={card.id} />
           ))}
         </div>
+
         <div className="Homefooter">
           <Footer />
         </div>
