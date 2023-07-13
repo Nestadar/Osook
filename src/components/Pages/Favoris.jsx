@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import MyContext from "../Context";
 import Minicards from "../../components/Minicards";
+import Footer from "../Footer/footer";
 import "./Favoris.scss";
+
 
 const Favoris = () => {
   const { items, filter } = useContext(MyContext);
@@ -21,7 +23,7 @@ const Favoris = () => {
           <Minicards items={card} key={card.id} />
         ))}
       </div>
-      <div className="favFooter"></div>
+      <div className="favFooter"><Footer /></div>
     </div>
   );
 };
