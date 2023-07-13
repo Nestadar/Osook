@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+
+
+
+
 .messageFooter {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.divMessages {
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(237, 237, 237, 0.796);
+  height: auto;
+  margin-bottom: 70px;
+  p, h2 {
+    font-family: 'Mohave', sans-serif;
+  }
+}
+
+.cardPicture3 {
+  height: 30px;
+
+}
+
+.divTexto {
+  padding: 10px;
+  width:90vw;
+  height: 170px;
+  border-bottom: 1px solid rgb(121, 121, 121);
+  display: flex;
+  // margin: 30px;
+  img {
+    width: 170px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 12px;
+  }
 }
