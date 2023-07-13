@@ -7,7 +7,7 @@ import Filters from "../filters";
 const Publier = () => {
   return (
   <div className="divGlobal">
-    <Filters />
+    {/* <Filters /> */}
     <div className="divTitle">
       <h1>Publiez votre annonce</h1>
     </div>

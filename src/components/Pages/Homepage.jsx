@@ -5,9 +5,7 @@ import Filters from "../filters";
 import Card from "../Card";
 import Footer from "../Footer/footer";
 import backgroundHomepage from "../../assets/images/Homepage/backgroundHomepage.png";
-import Logo from "../../assets/images/Homepage/Logo.png";
 import "./Homepage.scss";
-
 
 const Homepage = () => {
   const [hidden, setHidden] = useState(false);
@@ -26,7 +24,6 @@ const Homepage = () => {
     <div>
       <div className={hidden === true ? "swipeUp" : "swipeDown"}>
         <img className="backgroundHomepage" src={backgroundHomepage} />
-        <img className="logoOsook" src={Logo} />
         <div className="divButtonSwipe">
           <button type="button" onClick={handleHide} />
         </div>
@@ -40,7 +37,10 @@ const Homepage = () => {
             <Card items={card} key={card.id} />
           ))}
         </div>
-        <div className="Homefooter"><Footer /></div>
+
+        <div className="Homefooter">
+          <Footer />
+        </div>
       </div>
     </div>
   );

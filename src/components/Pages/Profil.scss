@@ -1,5 +1,121 @@
-.profilFooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.global-Profile-container {
+  background-color: rgba(237, 237, 237, 0.796);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 2000px;
+  font-family: "Mohave", sans-serif;
+
+  .profile-Container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .profile-input {
+    border-radius: 10px;
+    height: 5vh;
+    width: 80vw;
+    border: none;
+    margin: 5px;
+  }
+
+  .profileTitlePic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+  }
+
+  .title-Profile,
+  .profile-pic {
+    margin: 20px;
+  }
+
+  .profileTitlePic {
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .profile-gear {
+    margin-top: 20px;
+    width: 25px;
+  }
+
+  .home-settings {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .profileBtn {
+    display: flex;
+    justify-content: center;
+    // margin: 20px;
+    flex-direction: column;
+
+    .Btn-OsooK {
+      background-image: linear-gradient(
+        to right,
+        #3494e6 0%,
+        #ec6ead 51%,
+        #3494e6 100%
+      );
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+      border: none;
+      font-family: "Mohave", sans-serif;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .Btn-OsooK:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+    }
+  }
+
+  .annonces-profil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 600px;
+
+    // margin: auto;
+  }
+
+  .favFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }

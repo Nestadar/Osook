@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
 
+// .favNavbar {
+//     width: 100vw;
+//     height: 20vh;
+//     background-color: green;
+//     top: 0;
+//     position: fixed;
+//     z-index:1;
+// }
+
 .favNavbar {
     width: 100vw;
     height: 20vh;
@@ -8,19 +17,24 @@
     top: 0;
     position: fixed;
     z-index:1;
+}
 
+.favContainer {
+    background-color: rgba(237, 237, 237, 0.796);
 }
 
 .favTitle {
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
+    height: 10%;
     position: absolute;
-    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     p {
-        text-align: center;
-        text-decoration: underline; 
+        text-align: center; 
         font-family: 'Mohave', sans-serif;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
     }
 }
@@ -36,11 +50,11 @@
     box-sizing: border-box;
     width: 100%;
     padding-top: 6em;
-    margin-top: 10em;
+    // margin-top: 10em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 10em;
+    padding-bottom: 5em;
 }

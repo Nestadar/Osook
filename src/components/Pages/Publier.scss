@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
 
-
-
-
 .divGlobal {
     display:flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     background-color: rgba(237, 237, 237, 0.796);
     .divTitle h1 {
         font-family: 'Mohave', sans-serif;
         font-size: 25px;
         margin-top:20px;
+        margin-bottom: 70px;
     }
     .divItemName {
         display:flex;
