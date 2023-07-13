@@ -23,6 +23,8 @@ const Minicards = ({ items }) => {
     setIsClicked(!isClicked);
   };
 
+  const fontSize = items.title.length > 12 ? "14px" : "16px";
+
   return (
     <div className="Cards2" onClick={handleClickDescription}>
       <div className="imageContainer2">
@@ -42,7 +44,7 @@ const Minicards = ({ items }) => {
       <div className="cardInfo2">
         <div className="divTitlePrice2">
           <div className="cardTitle2">
-            <h1>{items?.title}</h1>
+            <h1 style={{fontSize}}>{items?.title}</h1>
             {/* <p>Ville : {items.city}</p> */}
           </div>
           <div className="cardPrice2">
