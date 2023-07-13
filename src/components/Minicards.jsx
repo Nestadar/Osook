@@ -1,6 +1,5 @@
 import { useState } from "react";
 import coeurPlein from "../assets/images/card/Coeur-plein.png";
-import coeurVide from "../assets/images/card/Coeur-vide.png";
 import "./Minicards.scss";
 const baseUrl = "http://localhost:4343/";
 

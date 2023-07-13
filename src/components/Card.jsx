@@ -57,16 +57,14 @@ const Card = ({ items }) => {
           }
         >
           <p>{items?.description}</p>
-        </div>
-      </div>
-      <div className={isClicked === false ? "descriptionNone" : "cardBuy"}>
-        <div className="inputUser">
-          <img src={LogoUser} alt="logoUser" />
-          <p>{items?.seller}</p>
-        </div>
-        <div className="divButtons">
-          <button id="buy">Acheter</button>
-          <button id="contact">Message</button>
+          <div className="inputUser">
+            <img src={LogoUser} alt="logoUser" />
+            <p>{items?.seller}</p>
+          </div>
+          <div className="divButtons">
+            <button id="buy">Acheter</button>
+            <button id="contact">Message</button>
+          </div>
         </div>
       </div>
     </div>

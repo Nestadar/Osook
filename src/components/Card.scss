@@ -8,13 +8,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10em;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
+    margin-bottom: 5em;
+    background-color: white;
     .imageContainer {
         width: 349px;
         height: 283px;
-        border-radius: 20px;
+        border-radius: 16px;
         overflow: hidden;
         .cardPicture {
             width: 100%;
@@ -30,8 +31,8 @@
         display: none;
     }
     .isFavorite {
-        margin: 5px;
-        height: 35px;
+        margin: 10px;
+        height: 20px;
 
     }
     .notFavorite {
@@ -40,7 +41,7 @@
     
     }  
     #favoriteButton {
-        
+        margin-left: 320px;
     }
     .cardInfo {
         width:90%;
@@ -69,67 +70,29 @@
         .cardDescription {
             margin: 10px 0 10px 0;
             width: 100%;
-            p{
-                font-family: 'Mohave', sans-serif;
-                font-size: 15px;
-            }
-        
-        }
-    }
-    .displayClassic {
-        width:90%;
-        .cardTitle {
             display:flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            gap:5px;
-            color: #000;
-            font-family: 'Mohave', sans-serif;
-            font-size: 8px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            p {
-                font-size: 15px;
-                
+            width:90%;
+            border-radius: 20px;
+            .inputUser {
+                display: flex;
+                justify-content: start;
+                border-bottom: 2px solid black;
+                height: fit-content;
+                width: calc(fit-content + 5px);
+                margin-bottom:10px;
+                margin-top: 10px;
+                img {
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 5px;
+                }
+                p {
+                    font-family: 'Mohave', sans-serif;
+                } 
             }
-        }
-    
-        .cardDescription {
-            margin: 10px;
-            p{
-                font-family: 'Mohave', sans-serif;
-                font-size: 15px;
-            }
-        }
-    }
-
-    
-
-    .cardBuy {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width:90%;
-        border-radius: 20px;
-        .inputUser {
-            display: flex;
-            justify-content: start;
-            border-bottom: 2px solid black;
-            height: fit-content;
-            width: calc(fit-content + 5px);
-            margin-bottom:10px;
-            margin-top: 10px;
-            img {
-                height: 20px;
-                width: 20px;
-                margin-right: 5px;
-            }
-            p {
-                font-family: 'Mohave', sans-serif;
-            } 
-        }
-        .divButtons{
+            .divButtons{
             // border: 2px solid purple;
             width:50%;
             display: flex;
@@ -182,7 +145,42 @@
                 position:relative;
                 top:1px;
             }  
+            }
+            p{
+                font-family: 'Mohave', sans-serif;
+                font-size: 15px;
+            }
+        
         }
+    }
+    .displayClassic {
+        width:90%;
+        transition: opacity 0.3s ease;
+        .cardTitle {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap:5px;
+            color: #000;
+            font-family: 'Mohave', sans-serif;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            p {
+                font-size: 15px;
+                
+            }
+        }
+    
+    
+        
+    }
+
+    
+
+    .cardBuy {
+        
     }
     .divTitlePrice {
         margin-top: 10px;
@@ -194,7 +192,7 @@
         margin-bottom: 10px;
         .cardPrice {
             font-family: 'Mohave', sans-serif;
+            color: #a855f6;
         }
     }
 }
-
