@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+
+
+
+.favNavbar {
+    width: 100vw;
+    height: 20vh;
+    background-color: green;
+    top: 0;
+    position: fixed;
+    z-index:1;
+
+}
+
+.favTitle {
+    box-sizing: border-box;
+    width: 100vw;
+    position: absolute;
+    margin-top: 3em;
+    p {
+        text-align: center;
+        text-decoration: underline; 
+        font-family: 'Mohave', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+.favFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.favCards {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 6em;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10em;
+}

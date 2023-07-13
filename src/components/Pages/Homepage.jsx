@@ -3,6 +3,7 @@ import { useState } from "react";
 import MyContext from "../Context";
 import Filters from "../filters";
 import Card from "../Card";
+import Footer from "../Footer/footer";
 import backgroundHomepage from "../../assets/images/Homepage/backgroundHomepage.png";
 import Logo from "../../assets/images/Homepage/Logo.png";
 import "./Homepage.scss";
@@ -30,14 +31,17 @@ const Homepage = () => {
         </div>
       </div>
       <div className={hidden === false ? "contentNone" : "contentHomepage"}>
-        <div className="filters"></div>
-        <Filters />
+        <div className="filters">
+          <Filters />
+        </div>
         <div className="cartesDisplay">
           {filteredItems.map((card) => (
             <Card items={card} key={card.id} />
           ))}
         </div>
-        <div className="footer"></div>
+        <div className="Homefooter">
+          <Footer />
+        </div>
       </div>
     </div>
   );
