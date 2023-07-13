@@ -110,11 +110,8 @@
   display: none;
 }
 
-.footer {
-  height: 10vh;
-  width: 100vw;
-  bottom: 0;
+ .Homefooter {
   position: fixed;
-  background-color: aqua;
-  box-shadow: 0px -9px 25px -16px rgba(0, 0, 0, 1);
+  bottom: 0;
+  width: 100%;
 }
