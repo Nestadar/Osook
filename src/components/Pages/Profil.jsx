@@ -134,12 +134,11 @@ const Profil = ({ items }) => {
                 />
               ))}
             </div>
-
-            <div className="favFooter">
-              <Footer />
-            </div>
           </form>
         </div>
+      </div>
+      <div className="favFooter">
+        <Footer />
       </div>
     </>
   );

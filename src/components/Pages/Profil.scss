@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 2100px;
+  height: 2000px;
   font-family: "Mohave", sans-serif;
 
   .profile-Container {
@@ -47,10 +47,6 @@ body {
   .title-Profile,
   .profile-pic {
     margin: 20px;
-  }
-
-  .title-Profile {
-    text-decoration: underline;
   }
 
   .profile-gear {
@@ -109,5 +105,11 @@ body {
     margin-top: 600px;
 
     // margin: auto;
+  }
+
+  .favFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

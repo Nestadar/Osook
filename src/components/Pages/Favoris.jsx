@@ -12,8 +12,8 @@ const Favoris = () => {
     : items;
 
   return (
-    <div>
-      <div className="favNavbar"></div>
+    <div className="favContainer">
+      {/* <div className="favNavbar"></div> */}
       <div className="favTitle">
         <p>Mes Favoris</p>
       </div>
