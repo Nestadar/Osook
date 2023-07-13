@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap");
 
 // .favNavbar {
 //     width: 100vw;
@@ -11,50 +10,49 @@
 // }
 
 .favNavbar {
-    width: 100vw;
-    height: 20vh;
-    background-color: green;
-    top: 0;
-    position: fixed;
-    z-index:1;
+  width: 100vw;
+  height: 20vh;
+  background-color: green;
+  top: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 .favContainer {
-    background-color: rgba(237, 237, 237, 0.796);
+  background-color: rgba(237, 237, 237, 0.796);
 }
 
 .favTitle {
-    box-sizing: border-box;
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    p {
-        text-align: center; 
-        font-family: 'Mohave', sans-serif;
-        font-size: 25px;
-        font-weight: bold;
-    }
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-align: center;
+    font-family: "Mohave", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 
-
 .favFooter {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .favCards {
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 6em;
-    // margin-top: 10em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    padding-bottom: 5em;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 6em;
+  // margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 5em;
 }

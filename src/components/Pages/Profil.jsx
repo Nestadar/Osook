@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useContext } from "react";
-import MyContext from "../Context";
+import { useState, useEffect } from "react";
+// import MyContext from "../Context";
 import Minicards from "../Minicards";
 import Footer from "../Footer/footer";
 import "./Profil.scss";
 
 const Profil = ({ items }) => {
+  // const { items } = useContext(MyContext);
   const initialValues = { email: "", password: "", text: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -126,12 +127,7 @@ const Profil = ({ items }) => {
             <div className="annonces-profil" style={{ height: "400px" }}>
               <h1 className="titleAnnonces">Mes Annonces </h1>
               {items.slice(0, 4).map((item) => (
-                <Minicards
-                  key={item.id}
-                  title={item.title}
-                  price={item.price}
-                  image={item.image}
-                />
+                <Minicards items={item} />
               ))}
             </div>
           </form>

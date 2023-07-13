@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useState } from "react";
 import MyContext from "../Context";
 import Filters from "../filters";
@@ -37,7 +37,6 @@ const Homepage = () => {
             <Card items={card} key={card.id} />
           ))}
         </div>
-
         <div className="Homefooter">
           <Footer />
         </div>

@@ -1,81 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap");
 
 .divGlobal {
-    display:flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(237, 237, 237, 0.796);
+  .divTitle h1 {
+    font-family: "Mohave", sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .divItemName {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+    p {
+      margin-left: 18px;
+      align-self: flex-start;
+      font-family: "Mohave", sans-serif;
+    }
+    input {
+      width: 90%;
+      border-radius: 5px;
+      height: 25px;
+    }
+  }
+  .divDescription {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: rgba(237, 237, 237, 0.796);
-    .divTitle h1 {
-        font-family: 'Mohave', sans-serif;
-        font-size: 25px;
-        margin-top:20px;
-        margin-bottom: 70px;
+    width: 100%;
+    margin-bottom: 20px;
+    p {
+      margin-left: 18px;
+      align-self: flex-start;
+      font-family: "Mohave", sans-serif;
     }
-    .divItemName {
-        display:flex;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-        margin-bottom: 20px;
-        p {
-            margin-left:18px;
-            align-self: flex-start;
-            font-family: 'Mohave', sans-serif;
-        }
-        input {
-            width:90%;
-            border-radius: 5px;
-            height:25px;
-        }
+    textarea {
+      width: 90%;
+      border-radius: 5px;
     }
-    .divDescription {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width:100%;
-        margin-bottom: 20px;
-        p {
-            margin-left:18px;
-            align-self: flex-start;
-            font-family: 'Mohave', sans-serif;
-        }
-        textarea {
-            width:90%;
-            border-radius: 5px;
-        }
+  }
+  .divAddPictures {
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    justify-items: start;
+    align-items: center;
+    margin-bottom: 35px;
+    img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
     }
-    .divAddPictures {
-        display:flex;
-        width:90%;
-        gap:20px;
-        justify-items: start;
-        align-items: center;
-        margin-bottom: 35px;
-        img {
-           width:35px;
-           height:35px; 
-           cursor:pointer;
-        }
-        p {
-            font-family: 'Mohave', sans-serif;
-        }
+    p {
+      font-family: "Mohave", sans-serif;
     }
-    .divItemPrice {
-        width:70%;
-        margin-right:5em;
-        p {
-            font-family: 'Mohave', sans-serif;
-        }
-        input {
-            height:25px;
-            border-radius:5px;
-        }
+  }
+  .divItemPrice {
+    width: 70%;
+    margin-right: 5em;
+    p {
+      font-family: "Mohave", sans-serif;
     }
-    .publishFooter {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    input {
+      height: 25px;
+      border-radius: 5px;
     }
+  }
+  .publishFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }

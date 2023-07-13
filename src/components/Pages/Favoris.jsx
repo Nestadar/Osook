@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import MyContext from "../Context";
 import Minicards from "../../components/Minicards";
 import Footer from "../Footer/footer";
@@ -19,7 +19,7 @@ const Favoris = () => {
       </div>
       <div className="favCards">
         {filteredItems.slice(0, 20).map((card) => (
-          <Minicards items={card} key={card.id} image={card.image} />
+          <Minicards items={card} key={card.id} />
         ))}
       </div>
       <div className="favFooter">
